@@ -19,9 +19,6 @@
 </script>
 </head>
 <body>
-    <title>Something went wrong...</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Albert Sans" rel="stylesheet" />
     <div>
       <div class="area">
         <ul class="circles">
@@ -40,18 +37,7 @@
             <div class="flex h-full max-w-md flex-col items-center gap-4 lg:max-w-[1024px] lg:justify-evenly">
               <div></div>
               <div class="my-16 lg:my-0">
-                <h2>
-                  <div class="cf-error-details cf-error-522">
-                    <h1>Connection timed out</h1>
-                    <p>The initial connection between Cloudflare's network and the origin web server timed out. As a result, the web page can not be displayed.</p>
-                    <ul>
-                      <li>Ray ID: 000000000000000</li>
-                      <li>Your IP address: 0.0.0.0</li>
-                      <li>Error reference number: 522</li>
-                      <li>Cloudflare Location: San José</li>
-                    </ul>
-                  </div>
-                </h2>
+                ::CLOUDFLARE_ERROR_500S_BOX::
                 <div class="flex flex-col items-center">
                   <button onClick="location.reload()" class="inline-flex items-center rounded-lg bg-gray-900 px-4 py-2 font-bold text-white hover:bg-gray-400">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +45,7 @@
                     </svg>
                     <span class="ml-4">Reload</span>
                   </button>
-                  <div class="m-4 text-gray-500 overflow-hidden text-ellipsis line-clamp-3 lg:max-w-[1024px] max-w-[28rem]" id="url"></div>
+                  <div class="m-4 line-clamp-3 max-w-[28rem] overflow-hidden text-ellipsis text-gray-500 lg:max-w-[1024px]" id="url"></div>
                 </div>
               </div>
               <div class="flex flex-col">
@@ -84,7 +70,7 @@
                       </svg>
                       <h3 class="mb-4 text-xl">If you are the owner</h3>
                     </div>
-                    <div>Contact your hosting provider letting them know your web server is not completing requests. Additional troubleshooting information here.</div>
+                    <div>Contact your hosting provider letting them know your web server is not completing requests.</div>
                   </div>
                 </div>
                 <div class="mt-4 flex self-center text-caption-regular" id="details"></div>
@@ -93,6 +79,7 @@
           </div>
         </div>
       </div>
-    </div>    
+    </div>
+        
 </body>
 </html>
