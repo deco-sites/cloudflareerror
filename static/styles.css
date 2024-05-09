@@ -628,6 +628,12 @@ html {
 .mt-4 {
   margin-top: 1rem;
 }
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
 .flex {
   display: flex;
 }
@@ -642,6 +648,9 @@ html {
 }
 .w-full {
   width: 100%;
+}
+.max-w-\[28rem\] {
+  max-width: 28rem;
 }
 .max-w-md {
   max-width: 28rem;
@@ -661,8 +670,14 @@ html {
 .self-center {
   align-self: center;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .overflow-y-auto {
   overflow-y: auto;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
 }
 .rounded-lg {
   border-radius: 0.5rem;
