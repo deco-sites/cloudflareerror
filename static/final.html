@@ -703,6 +703,9 @@ html {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.text-center {
+  text-align: center;
+}
 .text-caption-regular {
   font-size: 13px;
   line-height: 20px;
@@ -853,7 +856,6 @@ html {
 }
 
 </style>
-
 <link href="https://fonts.googleapis.com/css?family=Albert Sans" rel="stylesheet" />
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
@@ -886,7 +888,7 @@ html {
           <div class="flex h-full w-full items-center justify-center">
             <div class="flex h-full max-w-md flex-col items-center gap-4 lg:max-w-[1024px] lg:justify-evenly">
               <div></div>
-              <div class="my-16 lg:my-0">
+              <div class="my-16 text-center lg:my-0">
                 ::CLOUDFLARE_ERROR_500S_BOX::
                 <div class="flex flex-col items-center">
                   <button onClick="location.reload()" class="inline-flex items-center rounded-lg bg-gray-900 px-4 py-2 font-bold text-white hover:bg-gray-400">
@@ -930,6 +932,6 @@ html {
         </div>
       </div>
     </div>
-        
+     
 </body>
 </html>

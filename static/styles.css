@@ -697,6 +697,9 @@ html {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.text-center {
+  text-align: center;
+}
 .text-caption-regular {
   font-size: 13px;
   line-height: 20px;
