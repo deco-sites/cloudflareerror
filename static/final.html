@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Something went wrong...</title>
+<style>
+/*
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+*/
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+::before,
+::after {
+  --tw-content: '';
+}
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+  font-family: Albert Sans, sans-serif;
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+/*
+Remove the default font size and weight for headings.
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/*
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+/*
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+:-moz-focusring {
+  outline: auto;
+}
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+legend {
+  padding: 0;
+}
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*
+Reset default styling for dialogs.
+*/
+dialog {
+  padding: 0;
+}
+/*
+Prevent resizing textareas horizontally by default.
+*/
+textarea {
+  resize: vertical;
+}
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+/*
+Set the default cursor for buttons.
+*/
+button,
+[role="button"] {
+  cursor: pointer;
+}
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 16px;
+  color: #0d1717;
+  font-family: "Albert Sans";
+  /* Set your desired default font size here */
+}
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+  --tw-contain-style: ;
+}
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+  --tw-contain-style: ;
+}
+::-webkit-scrollbar {
+  height: 0.25rem;
+  width: 0.25rem;
+  background-color: transparent;
+}
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circles li {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+@keyframes checkAnimation {
+  0% {
+  }
+  25% {
+    transform: scale(3);
+    border-width: 1px;
+    background-color: transparent;
+  }
+  75% {
+    transform: scale(3);
+    border-width: 1px;
+    background-color: transparent;
+  }
+  100% {
+    border-width: 1px;
+  }
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.inset-0 {
+  inset: 0px;
+}
+.m-4 {
+  margin: 1rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.ml-4 {
+  margin-left: 1rem;
+}
+.mr-4 {
+  margin-right: 1rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.h-full {
+  height: 100%;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-md {
+  max-width: 28rem;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.self-center {
+  align-self: center;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+.p-4 {
+  padding: 1rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.text-caption-regular {
+  font-size: 13px;
+  line-height: 20px;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
+}
+.animate-progress {
+  animation: move 1s linear infinite;
+}
+.cf-error-details {
+  margin: 16px;
+}
+.cf-error-details h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.cf-error-details ul {
+  list-style-type: none;
+  /* Remove default list styles */
+  padding: 0;
+  /* Remove default padding */
+}
+.cf-error-details ul > li {
+  display: inline;
+  /* Display list items inline */
+  margin-right: 10px;
+  /* Add spacing between list items if needed */
+}
+#details ul {
+  list-style-type: none;
+  /* Remove default list styles */
+  padding: 0;
+  /* Remove default padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  #details ul {
+    list-style-type: none;
+    display: inline;
+    /* Remove default list styles */
+    padding: 0;
+    /* Remove default padding */
+  }
+  #details ul > li {
+    display: inline;
+    /* Display list items inline */
+    margin-right: 10px;
+    /* Add spacing between list items if needed */
+  }
+  #details ul > li:not(:first-child)::before {
+    content: "\2022‎‎ ‎ ‎ ";
+    left: 0;
+  }
+}
+.inline-list li {
+  display: inline;
+  /* Display list items inline */
+  margin-right: 10px;
+  /* Add spacing between list items if needed */
+}
+/* Style for each inner container */
+.inner-container {
+  flex: 1;
+  border-radius: 16px;
+  gap: 16px;
+  padding: 16px;
+  z-index: 10;
+  background-color: #eff0f0;
+  /* Grey background */
+}
+/* Style for h3 inside each inner container */
+.inner-container h3 {
+  font-weight: bold;
+  /* Bold font for h3 */
+}
+.decorative-stroke::before {
+  content: attr(data-text);
+  position: absolute;
+  pointer-events: none;
+  /* for text selection */
+  -webkit-text-stroke: 0px;
+}
+.decorative-stroke {
+  margin: 0.5em;
+  font-size: 48px;
+  /* trick */
+  position: relative;
+  -webkit-text-stroke: 20px #9900e5;
+  color: white;
+}
+@keyframes move {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(500%);
+  }
+}
+.hover\:bg-gray-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+@media (min-width: 1024px) {
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .lg\:ml-2 {
+    margin-left: 0.5rem;
+  }
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
+  }
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+  .lg\:max-w-\[1024px\] {
+    max-width: 1024px;
+  }
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
+  }
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Albert Sans" rel="stylesheet" />
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+  const paragraph = document.querySelector('.cf-error-details p');
+  document.getElementById('data').appendChild(paragraph.cloneNode(true))
+  paragraph.remove();
+
+  document.getElementById('url').textContent = window.location.href;
+  const list = document.querySelector('.cf-error-details ul');
+  document.getElementById('details').appendChild(list.cloneNode(true));
+  list.remove();
+  });
+</script>
+</head>
+<body>
+    <div>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="bg-base-000 text-base-700 relative h-full min-h-screen">
+        <div class="bg-base-000 absolute inset-0 flex min-h-screen overflow-y-auto transition-opacity duration-500">
+          <div class="flex h-full w-full items-center justify-center">
+            <div class="flex h-full max-w-md flex-col items-center gap-4 lg:max-w-[1024px] lg:justify-evenly">
+              <div></div>
+              <div class="my-16 lg:my-0">
+                <h2>
+                  <div class="cf-error-details cf-error-522">
+                    <h1>Connection timed out</h1>
+                    <p>The initial connection between Cloudflare's network and the origin web server timed out. As a result, the web page can not be displayed.</p>
+                    <ul>
+                      <li>Ray ID: 000000000000000</li>
+                      <li>Your IP address: 0.0.0.0</li>
+                      <li>Error reference number: 522</li>
+                      <li>Cloudflare Location: San José</li>
+                    </ul>
+                  </div>
+                </h2>
+                <div class="flex flex-col items-center">
+                  <button onClick="location.reload()" class="inline-flex items-center rounded-lg bg-gray-900 px-4 py-2 font-bold text-white hover:bg-gray-400">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.83808 1.48098C6.77443 0.983421 8.7618 1.75607 9.84805 3.33333L4.83808 1.48098ZM9.84805 3.33333H8C7.63181 3.33333 7.33333 3.63181 7.33333 4C7.33333 4.36819 7.63181 4.66667 8 4.66667H10.9402C10.9504 4.6669 10.9606 4.6669 10.9708 4.66667H11.3333C11.7015 4.66667 12 4.36819 12 4V0.666666C12 0.298476 11.7015 -1.04937e-06 11.3333 -1.04937e-06C10.9651 -1.04937e-06 10.6667 0.298476 10.6667 0.666666V2.20284C9.22174 0.42284 6.82847 -0.407187 4.50607 0.189645L4.50592 0.189682C3.45105 0.461021 2.48993 1.01439 1.72565 1.79045C0.961376 2.56651 0.422766 3.53597 0.16759 4.59487C-0.0875869 5.65377 -0.0497029 6.76216 0.277178 7.80117C0.604059 8.84018 1.2076 9.7706 2.02309 10.4927C2.83857 11.2147 3.83523 11.7012 4.90617 11.8999C5.97711 12.0985 7.08193 12.002 8.10215 11.6205C9.12236 11.2389 10.0195 10.5869 10.6973 9.73431C11.3751 8.88169 11.808 7.86065 11.9497 6.78068C11.9975 6.41562 11.7404 6.08087 11.3754 6.03299C11.0103 5.98512 10.6755 6.24225 10.6277 6.60732C10.5175 7.44729 10.1808 8.24143 9.65359 8.90458C9.1264 9.56773 8.42864 10.0749 7.63514 10.3716C6.84164 10.6683 5.98233 10.7434 5.14938 10.5889C4.31642 10.4344 3.54125 10.056 2.90698 9.49441C2.27272 8.93281 1.80329 8.20914 1.54905 7.40103C1.29481 6.59291 1.26535 5.73083 1.46382 4.90724C1.66229 4.08365 2.08121 3.32962 2.67564 2.72602C3.27005 2.12246 4.01753 1.69207 4.83793 1.48102" fill="white" />
+                    </svg>
+                    <span class="ml-4">Reload</span>
+                  </button>
+                  <div class="m-4 text-gray-500" id="url">url</div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex flex-col lg:flex-row">
+                  <div class="inner-container ml-4 mr-4 p-4 lg:mr-2">
+                    <div class="flex gap-4">
+                      <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" width="24" height="24" rx="12" fill="#9900E6" />
+                        <path d="M12.5 6.66668C9.55452 6.66668 7.16671 9.05449 7.16671 12C7.16671 14.9455 9.55452 17.3333 12.5 17.3333C15.4456 17.3333 17.8334 14.9455 17.8334 12C17.8334 9.05449 15.4456 6.66668 12.5 6.66668ZM5.83337 12C5.83337 8.31811 8.81814 5.33334 12.5 5.33334C16.1819 5.33334 19.1667 8.31811 19.1667 12C19.1667 15.6819 16.1819 18.6667 12.5 18.6667C8.81814 18.6667 5.83337 15.6819 5.83337 12ZM12.5 8.66668C12.8682 8.66668 13.1667 8.96515 13.1667 9.33334V12C13.1667 12.3682 12.8682 12.6667 12.5 12.6667C12.1318 12.6667 11.8334 12.3682 11.8334 12V9.33334C11.8334 8.96515 12.1318 8.66668 12.5 8.66668ZM11.8334 14.6667C11.8334 14.2985 12.1318 14 12.5 14H12.5067C12.8749 14 13.1734 14.2985 13.1734 14.6667C13.1734 15.0349 12.8749 15.3333 12.5067 15.3333H12.5C12.1318 15.3333 11.8334 15.0349 11.8334 14.6667Z" fill="white" />
+                        <path d="M12.5 6.66668C9.55452 6.66668 7.16671 9.05449 7.16671 12C7.16671 14.9455 9.55452 17.3333 12.5 17.3333C15.4456 17.3333 17.8334 14.9455 17.8334 12C17.8334 9.05449 15.4456 6.66668 12.5 6.66668ZM5.83337 12C5.83337 8.31811 8.81814 5.33334 12.5 5.33334C16.1819 5.33334 19.1667 8.31811 19.1667 12C19.1667 15.6819 16.1819 18.6667 12.5 18.6667C8.81814 18.6667 5.83337 15.6819 5.83337 12ZM12.5 8.66668C12.8682 8.66668 13.1667 8.96515 13.1667 9.33334V12C13.1667 12.3682 12.8682 12.6667 12.5 12.6667C12.1318 12.6667 11.8334 12.3682 11.8334 12V9.33334C11.8334 8.96515 12.1318 8.66668 12.5 8.66668ZM11.8334 14.6667C11.8334 14.2985 12.1318 14 12.5 14H12.5067C12.8749 14 13.1734 14.2985 13.1734 14.6667C13.1734 15.0349 12.8749 15.3333 12.5067 15.3333H12.5C12.1318 15.3333 11.8334 15.0349 11.8334 14.6667Z" stroke="#9900E6" stroke-width="0" />
+                      </svg>
+                      <h3 class="mb-4 text-xl">What happened?</h3>
+                    </div>
+                    <div id="data"></div>
+                  </div>
+                  <div class="inner-container mx-4 mt-4 p-4 lg:ml-2 lg:mt-0">
+                    <div class="flex gap-4">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="#9900E6" />
+                        <path d="M8.66667 8C8.31304 8 7.97391 8.14048 7.72386 8.39052C7.47381 8.64057 7.33333 8.97971 7.33333 9.33333V16.3905L8.86193 14.8619C8.98695 14.7369 9.15652 14.6667 9.33333 14.6667H15.3333C15.687 14.6667 16.0261 14.5262 16.2761 14.2761C16.5262 14.0261 16.6667 13.687 16.6667 13.3333V9.33333C16.6667 8.97971 16.5262 8.64057 16.2761 8.39052C16.0261 8.14048 15.687 8 15.3333 8H8.66667ZM6.78105 7.44771C7.28115 6.94762 7.95942 6.66667 8.66667 6.66667H15.3333C16.0406 6.66667 16.7189 6.94762 17.219 7.44771C17.719 7.94781 18 8.62609 18 9.33333V13.3333C18 14.0406 17.719 14.7189 17.219 15.219C16.7189 15.719 16.0406 16 15.3333 16H9.60948L7.13807 18.4714C6.94741 18.6621 6.66066 18.7191 6.41154 18.6159C6.16243 18.5127 6 18.2696 6 18V9.33333C6 8.62609 6.28095 7.94781 6.78105 7.44771ZM8.66667 10C8.66667 9.63181 8.96514 9.33333 9.33333 9.33333H14.6667C15.0349 9.33333 15.3333 9.63181 15.3333 10C15.3333 10.3682 15.0349 10.6667 14.6667 10.6667H9.33333C8.96514 10.6667 8.66667 10.3682 8.66667 10ZM8.66667 12.6667C8.66667 12.2985 8.96514 12 9.33333 12H13.3333C13.7015 12 14 12.2985 14 12.6667C14 13.0349 13.7015 13.3333 13.3333 13.3333H9.33333C8.96514 13.3333 8.66667 13.0349 8.66667 12.6667Z" fill="white" />
+                        <path d="M8.66667 8C8.31304 8 7.97391 8.14048 7.72386 8.39052C7.47381 8.64057 7.33333 8.97971 7.33333 9.33333V16.3905L8.86193 14.8619C8.98695 14.7369 9.15652 14.6667 9.33333 14.6667H15.3333C15.687 14.6667 16.0261 14.5262 16.2761 14.2761C16.5262 14.0261 16.6667 13.687 16.6667 13.3333V9.33333C16.6667 8.97971 16.5262 8.64057 16.2761 8.39052C16.0261 8.14048 15.687 8 15.3333 8H8.66667ZM6.78105 7.44771C7.28115 6.94762 7.95942 6.66667 8.66667 6.66667H15.3333C16.0406 6.66667 16.7189 6.94762 17.219 7.44771C17.719 7.94781 18 8.62609 18 9.33333V13.3333C18 14.0406 17.719 14.7189 17.219 15.219C16.7189 15.719 16.0406 16 15.3333 16H9.60948L7.13807 18.4714C6.94741 18.6621 6.66066 18.7191 6.41154 18.6159C6.16243 18.5127 6 18.2696 6 18V9.33333C6 8.62609 6.28095 7.94781 6.78105 7.44771ZM8.66667 10C8.66667 9.63181 8.96514 9.33333 9.33333 9.33333H14.6667C15.0349 9.33333 15.3333 9.63181 15.3333 10C15.3333 10.3682 15.0349 10.6667 14.6667 10.6667H9.33333C8.96514 10.6667 8.66667 10.3682 8.66667 10ZM8.66667 12.6667C8.66667 12.2985 8.96514 12 9.33333 12H13.3333C13.7015 12 14 12.2985 14 12.6667C14 13.0349 13.7015 13.3333 13.3333 13.3333H9.33333C8.96514 13.3333 8.66667 13.0349 8.66667 12.6667Z" stroke="#9900E6" stroke-width="0" />
+                      </svg>
+                      <h3 class="mb-4 text-xl">If you are the owner</h3>
+                    </div>
+                    <div>Contact your hosting provider letting them know your web server is not completing requests. Additional troubleshooting information here.</div>
+                  </div>
+                </div>
+                <div class="mt-4 flex self-center text-caption-regular" id="details"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>
